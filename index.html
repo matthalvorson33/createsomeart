@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Drawing Ideas 
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    @font-face {
+        font-family: 'font';
+        src: url('Doodle.ttf') format('truetype');
+    }
+    </style>
+    <script>
+        function myFunction() {
+            var myArr = [
+                "Draw on something you wouldn’t normally draw on. (cardboard box, lamp, chair)",
+                "Draw random shapes and draw faces on them, or draw within the confines of the shape.",
+                "Draw a random shape and use it as the starting point of your drawing.",
+                "Draw through a filter. (Look up the whirlpool challenge on TikTok) You can use instagram filters too! Only look through the phone to draw!",
+                "Leave messages for future you. Doodle on small pieces of paper and hide them around your house.",
+                "Draw with your eyes closed. If you live with someone, try to get them guess what it is, OR ask social media what they think it is!",
+                "Make coffee stains on paper and outline them. Go from there!",
+                "Cut up post-it notes and rearrange them to make a piece.",
+                "Photoscan your face if you still have one of those printer things. Print that masterpiece out. Draw all over it. Bonus points: Use different colors markers.", 
+                "Draw a dog like a 3 year old would draw a dog. Then add detail.",
+                "Pick an object. Draw it in 5 seconds. Then draw it in 5 minutes. Compare the two.",
+                "Cut up photos or magazine images, all in various shapes and sizes, then glue them together and make a Frankenstein monster. \n Bonus points: Draw that creation as best as you can on a separate sheet of paper.",
+                "Grab a ruler or straight edge. Only draw in straight lines.",
+                "Shine a flashlight on a random object (stapler, Scissors, or maybe your hand?) Distort the Shadow. Trace it's outline on a piece of paper. Recreate the distorted object as best as you can, or get weird with it.",
+                "Play hangman. Grab a post it. Send it in a group chat or post it on twitter and Facebook. See how fast your friends can solve it.",
+                "Draw listening to a happy song, a sad song, and a song you hate. See how the 3 drawings differ!",
+                "Stare at something for 3 minutes. Put it out of sight and then draw it. How much do you remember?",
+                "Use a marker and draw on your fingerprint. Press down on the paper. Repeat with different colors all over the page.",
+                "When was the last time your finger painted? Get cheap kids paint and have fun!",
+                "Ask a friend to describe celebrity red carpet fashion. Draw it using only their descriptions.",
+                "Congrats, you own your own nation! Draw your flag!",
+                "Draw a vegetable. Give it arms. Regret the decision. Tear it up.",
+                "Remember cursive? Write a letter in cursive. Turn it into monster.",
+                "Draw 3 logos from memory. Compare them to the real thing when you're done. Don't forget that large corporations don't actually care about you. Woops! That's a different conversation for a different website. This is an art website. Have fun drawing! :)",
+                "Draw a childhood cartoon from memory and compare it to the real thing when you're done.",
+                "Pick one simple shape or symbol. Draw it over and over again next to each other. See how the shape or symbol differs from previous one.",
+                "Draw a stupid face and send it to a close friend or parent with no context.",
+                "Go to a random word generator website. Pick 3 words and use them as inspiration for your piece.",
+                "Draw a random object and mail it to your friend with no context.",
+                "Draw on your hand. Don't tell your parents, or you'll be grounded.",
+                "FaceTime your friend and have them mouth a thing to draw. Draw it and see if you read their lips correctly!",
+                "When was the last time you drew with crayons? Try it. Say hello to your inner child! Maybe don't tell them about all the things you've done. Just a quick hello.",
+                "have a friend drive you around. Place your paper on the passenger window. Draw whatever you want and see how the bumps change your drawing.",
+                "Draw something without letting the pen leave the paper.",
+                "Crumble up aluminum foil. Cover it with marker. Roll it on your page. See what you get.",
+                "Squint and draw an eye.",
+                "Make your own post card for your hometown. Be as mean as you want. It's your home town. Bonus points: Send it to someone from a different state.",
+                "Dip your finger in food coloring and flick it onto the paper. Make a mess, but don't get it on your new clothes or you're grounded.",
+                "Ask a friend to say the first word that comes to mind. Use that word as inspiration for your piece.",
+                "Put a pen between your toes. Try drawing a simple object or animal.",
+                "Draw with your non dominant hand. Color it in with your dominant hand.",
+                "Take a walk and take a photo of 3 things that catch your eye. How can those photos inspire your next piece?",
+                "Draw something and tape it to a lamppost. See how long it stays.",
+                "Dabble in a medium you've never tried before. What's the worst that can happen? You tried something?",
+            ]
+            var randomItem = myArr[Math.floor(Math.random()*myArr.length)];
+            document.getElementById('drawing').innerText = randomItem;
+        }
+    </script>
+</head>
+
+<body style="background: url('background.png') no-repeat center center fixed; 
+  color: white;
+  font-family: font;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+
+    <div id='drawin-box' style="text-align:center; font-size:48px; padding: 5px; position:absolute; 
+        width: 70%; left: 15%; top: 20%; text-align: center;">
+
+
+        <img src="button.png" style="max-width: 60%" onClick="myFunction();"/>
+        <br/><br/>
+        <div id="drawing"> Get drawing! </div>
+    </div>
+
+    <div id='credits' style="text-align:right; font-size:16px; padding: 5px; position:absolute;
+        right: 1%; bottom: 1%;">
+        
+        from the morons over at 
+        <a href="https://twitter.com/undocircle" target="_blank" style="color:yellow">undocircle</a>
+        <br/>
+        site by 
+        <a href="https://twitter.com/matthalv33" target="_blank" style="color:yellow">matt</a>
+    </div>
+</body>
+</html>
