@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Drawing Ideas 
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style="
+    @font-face {
+        font-family: "font";
+        src: url("font.tff" fotmat("truetype"));
+    }
+    "/>
+    <script>
+        object.addEventListener("randomize", myFunction);
+        object.onclick = function(){myScript};
+
+        function myFunction() {
+            var myArray = [
+                "Draw Apples",
+                "Draw your weapon",
+                "Draw Bananas",
+                "Draw Pears"
+            ];
+
+            var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+            document.getElementById('drawing').innerText = randomItem;
+        }
+    </script>
+</head>
+
+<body style="background: url('background.png') no-repeat center center fixed; 
+  font-family: 'font';
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+
+    <div id='drawin-box' style="text-align:center; background: #ffffff; padding: 5px; position:absolute; 
+        width: 30%; top: 40%; left: 30%; text-align: center;">
+        <div id="drawing">Get drawing! </div>
+        <br/><br/>
+        <img src="button.png" onClick="myFunction();"/>
+        <br/>
+    </div>
+</body>
+</html>
